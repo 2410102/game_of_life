@@ -1,3 +1,5 @@
+// '#' means an alive cell, '.' means a dead one
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
