@@ -25,7 +25,7 @@ build(const std::vector<std::vector<int>> & mtrx)
             alive_cnt += mtrx[(i - 1 + rows) % rows][(j - 1 + cols) % cols];
             if (!mtrx[i][j] && alive_cnt == TO_REVIVE) {
                 res[i][j] = 1;
-            } else if (mtrx[i][j] && (alive_cnt >= MIN_TO_SURVIVE && alive_cnt <= MIN_TO_SURVIVE)) {
+            } else if (mtrx[i][j] && (alive_cnt >= MIN_TO_SURVIVE && alive_cnt <= MAX_TO_SURVIVE)) {
                 res[i][j] = 1;
             } else if (mtrx[i][j]) {
                 res[i][j] = 0;
