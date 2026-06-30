@@ -1,3 +1,4 @@
+// The implementation of Game of Life by John Convey.
 // '#' means an alive cell, '.' means a dead one
 
 #include <iostream>
