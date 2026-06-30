@@ -5,8 +5,8 @@
 #include <vector>
 #include <algorithm>
 
-constexpr int TO_REVIVE = 3;
-constexpr int MAX_TO_SURVIVE = 3;
+constexpr int TO_REVIVE = 3; // A dead cell with three neighbours becomes alive
+constexpr int MAX_TO_SURVIVE = 3; // An alive cell with two or three neighbours survives, otherwise it dies
 constexpr int MIN_TO_SURVIVE = 2;
 
 std::vector<std::vector<int>>
